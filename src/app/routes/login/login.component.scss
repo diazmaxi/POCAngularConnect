@@ -1,0 +1,46 @@
+@import '../../../styles';
+
+.component_wrapper {
+  height: 100%;
+  /*background: #E6E6E6;*/
+}
+
+.background-box {
+  height: 30vh;
+  margin-left: -15px;
+  margin-right: -15px;
+  background: $primary-color;
+}
+
+.login-card {
+  @extend .card;
+  @include elevation(2);
+  border-radius: 0;
+  position: relative;
+  z-index: 10;
+  top: -12vh;
+  animation: enter-card .6s ease-in-out;
+}
+
+@keyframes enter-card {
+    from {
+        top: 40px;
+        opacity: 0.6;
+    }
+    to {
+        top: -12vh;
+        opacity: 1;
+    }
+}
+
+.input-container {
+  margin-top: 15px;
+}
+
+.custom_input {
+  margin-top: 25px;
+}
+
+.login-button-row {
+  margin-top: 25px;
+}

@@ -1,0 +1,10 @@
+@import '../../../styles/base';
+
+.primary-button {
+    width: 100%;
+    background: $primary-color;
+    height: 45px;
+    color: #FFF;
+    outline: none;
+    border: none;
+}

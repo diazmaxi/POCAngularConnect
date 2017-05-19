@@ -1,0 +1,30 @@
+.card {
+    background: #FFF;
+    border-radius: 3px;
+    padding: 20px; 
+    border: 0.5px solid #CCC;
+}
+
+.custom_input {
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none;
+    display: block;
+    width:100%;
+    padding: 0 5px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2.5px solid #CCC;
+    transition: border-bottom .3s ease-in;
+}
+
+.custom_input:focus, .custom_input:valid {
+    border-bottom: 2.5px solid $primary-color;
+}
+
+@media (max-width: 768px) {
+    .no-padding-xs {
+        padding: 0 !important;
+    }
+}

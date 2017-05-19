@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import NavbarConfig from '../../config/navbar.config';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,5 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  sarasa = 'sarasa';
+  menuItems;
+
+  constructor () {
+    this.menuItems = NavbarConfig.menuItems;
+  }
 }

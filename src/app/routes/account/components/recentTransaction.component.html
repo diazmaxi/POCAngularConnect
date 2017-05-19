@@ -1,0 +1,15 @@
+<div>
+    <table class="table">
+        <tbody>
+        <tr *ngFor="let transaction of recentTransactions | async" [ngClass]="transaction.withdrawals != '' ? 'deb' : 'cred'">
+            <td>{{ transaction.bookingDate}}</td>
+            <td>{{ transaction.description}}</td>
+            <!--<td>{{ transaction.reference}}</td>
+            <td>{{ transaction.valueDate}}</td>-->
+            <td *ngIf="transaction.deposits != ''">{{ transaction.currency}} {{ transaction.deposits}}</td>
+            <td *ngIf="transaction.withdrawals != ''">- {{ transaction.currency}} {{ transaction.withdrawals}}</td>
+            <td>{{ transaction.balance}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

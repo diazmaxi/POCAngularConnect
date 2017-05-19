@@ -1,0 +1,24 @@
+<div>
+  <div *ngFor="let product of products">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="account-card" (click)="onAccountClick(product)">
+          <div class="card-header">
+              <p> {{product.accountType}} {{product.acctNumber}}</p>
+          </div>
+          <div class="card-body">
+              <div class="card-body_col left">
+                  <p> Saldo actual</p>
+                  <p> {{product.currency}} {{product.currentBalance}}</p>
+              </div>
+              <div class="card-body_col right">
+                  <p> Saldo disponible</p>
+                  <p> {{product.currency}} {{product.availableBalance}}</p>
+              </div>
+          </div>
+          <div class="card-footer">
+              <p>Ver últimos movimientos</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

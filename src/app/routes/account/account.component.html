@@ -1,0 +1,12 @@
+<h1>AccountDetail</h1>
+<div>
+  <div>
+    <p> {{account.accountType}} {{account.acctNumber}}</p>
+  </div>
+  <div>
+
+    <p> Saldo actual {{account.currency}} {{account.currentBalance}}</p>
+    <p> Saldo disponible {{account.currency}} {{account.availableBalance}}</p>
+  </div>
+</div>
+<recent-transactions [account]="account" [user]="currentUser"></recent-transactions>

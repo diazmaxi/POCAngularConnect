@@ -1,0 +1,6 @@
+<div>
+    <!--<custom-navbar></custom-navbar>-->
+    <div class="background-box"></div>
+    <logout-button [user]="currentUser">Salir</logout-button>
+    <product-list [products]="accounts | async" class="product-list" (onAccountSelected)="onAccountSelected($event)"></product-list>
+</div>

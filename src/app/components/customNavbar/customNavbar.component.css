@@ -1,0 +1,27 @@
+nav {
+    height: 50px;
+    display: block;
+    box-shadow: 0px 3px 4px 1px #BBBBBB;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #C00;
+}
